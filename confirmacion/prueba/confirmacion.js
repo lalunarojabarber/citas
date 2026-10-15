@@ -68,7 +68,7 @@ async function fetchAppointments() {
       // 1. Limpieza y formateo con código de país
 let telefonoLimpio = telefono ? telefono.toString().replace(/\D/g, '') : '';
 if (telefonoLimpio.length === 10) {
-  telefonoLimpio = '52' + telefonoLimpio; // Cambia '52' según el país de tu barbería
+  telefonoLimpio = '+52' + telefonoLimpio; // Cambia '52' según el país de tu barbería
 }
 
 // 2. Construcción del mensaje codificado
